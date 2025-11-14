@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Counter</title>
+<style>
+  body {
+    background: #ffcccc;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  img {
+    width: 300px;
+    max-width: 80%;
+    border-radius: 10px;
+  }
+  .counter {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Replace image.png with your uploaded image file name -->
+<img src="image.png" alt="candidate" />
+
+<div class="counter" id="count">0</div>
+
+<script>
+let number = 0;
+setInterval(() => {
+  number++;
+  document.getElementById("count").textContent = number;
+}, 1000);
+</script>
+
+</body>
+</html>
